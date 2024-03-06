@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <Windows.h>
 #include <WinUser.h>
@@ -44,4 +45,4 @@ int main(){
 		Sleep(1000 / FPS);
 	}
 
-}
+}*/
