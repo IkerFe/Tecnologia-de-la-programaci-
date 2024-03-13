@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <vector>
 
 int posMin(std::vector<int>& v, int left, int right) 
@@ -68,5 +68,5 @@ int main()
 	 }
 	 std::cout << std::endl;
 }
-
+*/
 
