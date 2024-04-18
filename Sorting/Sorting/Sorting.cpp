@@ -42,7 +42,7 @@ int main()
     std::vector<std::string> words = { "Zebra", "Patata", "Venezuela", "Ola" };
     std::sort(words.begin(), words.end(), compareSize);
 
-    std::vector<Person> people = { {"A",30}, {"Ba", 25}, {"C",35}, {"B",5} };
+    std::vector<Person> people = { {"A",30}, {"Ba", 25}, {"C",35}, {"Ba",5} };
     std::sort(people.begin(), people.end(), comparePersonNameAndAge);
 
     for (int i = 0; i < v.size(); i++)
