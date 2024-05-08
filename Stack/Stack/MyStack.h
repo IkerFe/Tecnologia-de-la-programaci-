@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+
 class MyStack
 {
 	struct Node
@@ -8,6 +10,7 @@ class MyStack
 	};
 	Node* m_top;
 	size_t m_size = 0;
+
 public:
 	MyStack()
 	{
@@ -55,6 +58,17 @@ public:
 		delete nodeToRemove;
 		--m_size;
 		return valueToRemove;
+	}
+
+	void Print() const
+	{
+		Node* copyTopPointer = m_top;
+		while (copyTopPointer != nullptr) 
+		{
+			std::cout << copyTopPointer->value<< "-";
+			copyTopPointer = copyTopPointer->next;
+		}
+		std::cout << std::endl;
 	}
 
 };
