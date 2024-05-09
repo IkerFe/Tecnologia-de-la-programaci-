@@ -72,5 +72,29 @@ public:
 			return -1;
 		}
 	}
+	bool IsEmpty() const
+	{
+		return m_size;
+	}
+
+	void Print() const
+	{
+		Node* it = m_first;
+		while (it != nullptr)
+		{
+			std::cout << it->value << "-";
+			it = it->next;
+		}
+	}
+
+	void PrintReverse() const
+	{
+		Node* it = m_last;
+		while (it != nullptr)
+		{
+			std::cout << it->value << "-";
+			it = it->next;
+		}
+	}
 };
 
