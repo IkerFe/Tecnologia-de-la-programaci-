@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0db07bb1-e25b-4d65-8442-6226184c7533}</ProjectGuid>
-    <RootNamespace>List</RootNamespace>
+    <ProjectGuid>{ca06bdfd-4a19-4bfd-a2c9-780bc9802b86}</ProjectGuid>
+    <RootNamespace>Maps</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="List.cpp" />
-    <ClCompile Include="MyList.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MyList.h" />
+    <ClCompile Include="Maps.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <list>
+#include "MyList.h"
 
 int main()
 {
@@ -24,5 +25,24 @@ int main()
 	{
 		std::cout << *it << "<->";
 	}
+
+	std::cout << std::endl;
+
+	MyList myL1;
+
+
+	myL1.Insert(myL1.Front(), 7);
+	myL1.Insert(myL1.Front(), 10);
+	myL1.Insert(myL1.Front(), 15);
+
+	//Advance
+	Node* node = myL1.Advance(2);
+	std::cout << node->m_value << std::endl;
+	//Erase
+	myL1.Erase(myL1.Back());
+
+
+	myL1.Print();
+	myL1.ReversePrint();
 }
 
